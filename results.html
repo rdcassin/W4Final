@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./results.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/dcdd888d63.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Filtered Results</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <figure>
+          <img
+            class="logo__img nav__logo"
+            src="https://png.pngtree.com/png-vector/20190816/ourmid/pngtree-film-logo-design-template-vector-isolated-illustration-png-image_1693431.jpg"
+            alt=""
+          />
+        </figure>
+        <b class="logo__name">Movie Filter</b>
+      </div>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="/index.html" class="nav__link--anchor link__hover-effect"
+            >Home</a
+          >
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--anchor link__hover-effect"
+            >Find Your Movies</a
+          >
+        </li>
+        <li class="nav__link">
+          <a href="#" class="btn">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="container next-search__container">
+        <div class="row">
+          <h2 class="section__subtitle results-page__subtitle">Next Search</h2>
+          <div class="movie__search--container">
+            <input
+              id="results-page__searchfield"
+              class="movie__searchfield"
+              type="text"
+            />
+            <a href="#" class="search__btn results-page__btn btn" onclick="nextSearch()"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="results">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title results__title">
+            You'll Want To Watch This
+          </h1>
+          <div class="results__container">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
