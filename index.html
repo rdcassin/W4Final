@@ -26,7 +26,7 @@
         </figure>
         <b class="logo__name">Movie Filter</b>
       </div>
-      <ul class="nav__link--list">
+      <ul class="nav__links">
         <li class="nav__link">
           <a href="./index.html" class="nav__link--anchor link__hover-effect">Home</a>
         </li>
@@ -39,6 +39,29 @@
           <a href="" class="btn">CONTACT</a>
         </li>
       </ul>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <div class="menu__backdrop--wrapper">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__link">
+              <a href="./index.html" class="menu__link--anchor link__hover-effect">Home</a>
+            </li>
+            <li class="menu__link">
+              <a href="./results.html" class="menu__link--anchor link__hover-effect"
+                >Find Your Movies</a
+              >
+            </li>
+            <li class="menu__link menu__link--btn">
+              <a href="" class="btn">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <header>
       <div class="container">

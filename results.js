@@ -2,6 +2,13 @@ const resultsListEl = document.querySelector(".results__container");
 const searchedTitle = localStorage.getItem("title");
 document.getElementById("results-page__searchfield").value = searchedTitle;
 
+function openMenu() {
+  document.body.classList += " menu--open"
+}
+
+function closeMenu () {
+  document.body.classList.remove('menu--open')
+}
 
 async function nextSearch() {
   const searchedTitle = document.getElementById("results-page__searchfield").value;
@@ -10,7 +17,8 @@ async function nextSearch() {
 
 async function renderMovies(title) {
   const resultsList = await sTypeSearch(title);
-  const finalList = resultsList.slice(0,9);
+  //if you want to slice the list for fewer results, add .slice(0,#) to limit the results.  Max results of 10.
+  const finalList = resultsList;
   resultsListEl.innerHTML = finalList.map((movie) => movieHTML(movie)).join("");
 }
 
